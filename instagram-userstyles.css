@@ -1,0 +1,100 @@
+/**
+ * User styles for Instagram
+ * author: Marek Wojtaszek (http://marekwojtaszek.com/)
+ */
+
+body .-cx-PRIVATE-Shell__nav {
+    display: none;
+}
+
+body .-cx-PRIVATE-FeedPage__root {
+    max-width: 100%;
+    padding: 0;
+}
+
+body .-cx-PRIVATE-FeedPage__feed {
+    display: flex;
+}
+
+body .-cx-PRIVATE-FeedPage__feed div {
+    overflow: visible;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+body .-cx-PRIVATE-FeedPage__post,
+body .-cx-PRIVATE-FeedPage__suggestedUsersList {
+    width: 32%;
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+body .-cx-PRIVATE-FeedPage__post:nth-child(3n-1),
+body .-cx-PRIVATE-FeedPage__suggestedUsersList:nth-child(3n-1) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body .-cx-PRIVATE-Photo__placeholder {
+    cursor: default;
+}
+
+body .-cx-PRIVATE-Post__feed .-cx-PRIVATE-Post__header {
+    height: 44px;
+    padding: 3px 10px 0;
+}
+
+body .-cx-PRIVATE-Post__ownerAndLocation {
+    height: 40px;
+}
+
+body .-cx-PRIVATE-Post__feed .-cx-PRIVATE-Post__ownerAvatar {
+    margin: -6px 10px -1px -5px;
+}
+
+body .-cx-PRIVATE-Post__timestamp,
+body .-cx-PRIVATE-Post__timestamp:visited {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+body .-cx-PRIVATE-Photo__clickShield,
+body .-cx-PRIVATE-UserTag__content,
+body .-cx-PRIVATE-PhotoWithUserTags__indicator,
+body .-cx-PRIVATE-PhotoWithUserTags__tagMeasurementLayer,
+body .-cx-PRIVATE-PostInfo__root.-cx-PRIVATE-Post__mediaInfo,
+body .-cx-PRIVATE-PostInfo__feedback.-cx-PRIVATE-PostInfo__feedbackStackedVariant {
+    display: none;
+}
+
+body .-cx-PRIVATE-PostPage__root .-cx-PRIVATE-PostInfo__root.-cx-PRIVATE-Post__mediaInfo,
+body .-cx-PRIVATE-PostPage__root .-cx-PRIVATE-PostInfo__feedback.-cx-PRIVATE-PostInfo__feedbackStackedVariant,
+body .-cx-PRIVATE-Modal__root .-cx-PRIVATE-PostInfo__root.-cx-PRIVATE-Post__mediaInfo,
+body .-cx-PRIVATE-Modal__root .-cx-PRIVATE-PostInfo__feedback.-cx-PRIVATE-PostInfo__feedbackStackedVariant {
+    display: flex;
+    display: -webkit-flex;
+}
+
+body .-cx-PRIVATE-FeedPage__post:hover .-cx-PRIVATE-PostInfo__root.-cx-PRIVATE-Post__mediaInfo,
+body .-cx-PRIVATE-FeedPage__suggestedUsersList:hover .-cx-PRIVATE-PostInfo__root.-cx-PRIVATE-Post__mediaInfo {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 100000;
+    margin: 0;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px #ccc;
+    background: #fff;
+}
+
+body .-cx-PRIVATE-PostInfo__comments.-cx-PRIVATE-PostInfo__commentsStackedVariant {
+    margin: 0;
+    padding: 5px;
+}
