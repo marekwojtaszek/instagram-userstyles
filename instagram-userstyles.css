@@ -44,6 +44,12 @@ body .-cx-PRIVATE-Photo__placeholder {
     cursor: default;
 }
 
+body .-cx-PRIVATE-Post__ownerUserLink {
+	max-width: 100%;
+	display: block;
+    margin-right: 0;
+}
+
 body .-cx-PRIVATE-Post__feed .-cx-PRIVATE-Post__header {
     height: 44px;
     padding: 3px 10px 0;
